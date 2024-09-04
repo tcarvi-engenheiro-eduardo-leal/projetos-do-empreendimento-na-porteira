@@ -7,4 +7,6 @@
 - 
 
 ## A Calcular
-### Tensão Admissível do Solo
+- Tensão Admissível do Solo
+- Identificar existência ou não de lençol freático
+    - Nível do lençol freático

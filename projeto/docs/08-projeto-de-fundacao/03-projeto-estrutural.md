@@ -1,2 +1,42 @@
 # Projeto Estrutural
-- .
+
+## Pre-dimensionamento das sapatas 
+- Tendo como base o projeto estrutural e os resultados da sondagem
+- Desenhar cargas da estrutura
+- Identificar pilar que estará mais carregado
+- Desenhar área aproximada de influência
+- Exemplo de Dados de Planilha:
+    - Menor dimensão de Pilar: 15
+    - Maior dimensão de Pilar: 30
+    - SPT: 11
+    - Capacidade: 22 toneladas por metro quadrado (baseada no SPT)
+    - Carga Padrão: 13,6 toneladas  (carga do pilar de centro mais carregado)
+- Exemplo de Dimensões de Sapata:
+    - Para Pilar P1
+        - Tipo: Centro
+        - Carga: 13,6 toneladas
+        - Área/sapata: 6.181,81 centímetros quadrados
+        - Largura: 75 cm
+        - Comprimento: 90 cm
+        - Altura Total: 30 cm
+        - Altura da Saia: 15 cm
+        - Volume da Sapata: 0,162 metros cúbicos
+    - Para Pilar P2
+        - Tipo: Extremidade
+        - Carga: 6,8 toneladas
+        - Área/sapata: 3.090,90 centímetros quadrados
+        - Largura: 50 cm
+        - Comprimento: 65 cm
+        - Altura Total: 30 cm
+        - Altura da Saia: 15 cm
+        - Volume da Sapata: 0,0804375 metros cúbicos
+    - Para Pilar P3
+        - Tipo: CANTO
+        - Carga: 3,4 toneladas
+        - Área/sapata: 1545,455 centímetros quadrados
+        - Largura: 35 cm
+        - Comprimento: 50 cm
+        - Altura Total: 30 cm
+        - Altura da Saia: 15 cm
+        - Volume da Sapata: 0,045 metros cúbicos       
+        
