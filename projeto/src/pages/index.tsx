@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title="Projetos de Engenharia Civil - Responsabilidade Engenheiro Eduardo Leal"
-      description="Facilitação para planejamento dos trabalhos e para fiscalização da obra.">
+      description="Facilitação para o planejamento dos trabalhos e para a fiscalização da obra.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
