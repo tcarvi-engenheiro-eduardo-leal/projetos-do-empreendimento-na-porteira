@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/projeto-de-terraplenagem/objetivos-do-projeto">
+            to="/docs/projeto-de-terraplenagem/objetivos">
             Leia, Execute, Veja e Valide - 30 min para cada ⏱️
           </Link>
         </div>
@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title="Projetos de Engenharia Civil - Responsabilidade Engenheiro Eduardo Leal"
-      description="Description will go into a meta tag in <head />">
+      description="Facilitação para planejamento dos trabalhos e para fiscalização da obra.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

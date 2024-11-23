@@ -79,7 +79,7 @@ const config: Config = {
           items: [
             {
               label: 'Projetos',
-              to: '/docs/projeto-de-terraplenagem/objetivos-do-projeto',
+              to: '/docs/projeto-de-terraplenagem/objetivos',
             },
           ],
         },
