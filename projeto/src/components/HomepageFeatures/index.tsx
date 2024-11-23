@@ -10,32 +10,30 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Negócio',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Apresentação do Plano de Negócios. (em construção)<br></br>
+        Veja Site da Apresentação <a href="https://naporteira.com.br/em-breve" target="_blank">aqui</a>.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Facilitação para a Fiscalização',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Devido limitações financeiras, tudo será feito devagar. Mas executaremos todas as etapas do projeto com extrema perfeição técnica, com completa aderência às normas ABNT/NBR de engenharia Civil. <br></br><a href="https://naporteira.com.br/docs/category/projeto-de-terraplenagem" target="_self"></a>Etapa atual: identificação dos limites e topografia do terreno, para produção de documentos de unificação de lotes.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Documentos de Projetos com Cálculos',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Apresentação das etapas do projeto com os cálculos e análises relevantes. Cálculos serão mostrados em logs, a partir da execução de scripts python, a serem executos no Google-Colaboratory ou no próprio site do projeto.
       </>
     ),
   },

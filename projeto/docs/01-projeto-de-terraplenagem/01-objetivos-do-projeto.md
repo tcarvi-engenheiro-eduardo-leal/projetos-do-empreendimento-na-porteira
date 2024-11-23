@@ -1,1 +1,15 @@
 # Objetivos do Projeto
+- Ter conhecimento da locação da obra de engenharia civil.
+    - Medidas dos limites
+    - Áreas internas, dentro dos limites da locação.
+- Ter conhecimento altimétrico dos pontos de referência do terreno.
+- Calcular quantidade e local do movimento de terra.
+    - Planejar execução da terraplenagem.
+- Ter dados inicias para produzir:
+    - Locação da Obra de Engenharia Civil
+    - Levantamento Topográfico
+    - Projeto Estrutural
+    - Projeto de Interiores
+    - Projeto Luminotécnico
+    - Projeto Acústico
+    - Projeto de Fundação

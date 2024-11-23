@@ -1,0 +1,55 @@
+# Etapa 1.2 - Memorial de Cálculo da Áreas Internas da Locação
+
+```python
+import math
+
+def calcular_area_triangulo(lado1, lado2, angulo):
+    """
+    Conhecimentos Matemáticos:
+        Fórmula da área de triângulo com dois lados e o ângulo entre eles.
+        area(lado1, lado2, angulo) = (lado1 x lado2 x sen(angulo))/2
+    :param lado1: Comprimento do primeiro lado.
+    :param lado2: Comprimento do segundo lado.
+    :param angulo: Ângulo entre os dois lados em graus.
+    :return: Área do triângulo.
+    """
+    angulo_rad = math.radians(angulo)  # Converte o ângulo para radianos
+    area = 0.5 * lado1 * lado2 * math.sin(angulo_rad)
+    return area
+
+def calcular_area_quadrilatero(identificador_do_quadrilatero, lado1_tri1, lado2_tri1, angulo_tri1, 
+                               lado1_tri2, lado2_tri2, angulo_tri2):
+    """
+    :param lado1_tri1: Primeiro lado do triângulo 1.
+    :param lado2_tri1: Segundo lado do triângulo 1.
+    :param angulo_tri1: Ângulo entre os lados do triângulo 1.
+    :param lado1_tri2: Primeiro lado do triângulo 2.
+    :param lado2_tri2: Segundo lado do triângulo 2.
+    :param angulo_tri2: Ângulo entre os lados do triângulo 2.
+    :return: Área total do quadrilátero.
+    """
+    # Área do primeiro triângulo
+    area_tri1 = calcular_area_triangulo(lado1_tri1, lado2_tri1, angulo_tri1)
+    
+    # Área do segundo triângulo
+    area_tri2 = calcular_area_triangulo(lado1_tri2, lado2_tri2, angulo_tri2)
+    
+    # Soma das áreas dos dois triângulos
+    area_total = area_tri1 + area_tri2
+    return area_total
+
+# Exemplo de uso
+lado1_tri1 = 5  # Lado 1 do triângulo 1
+lado2_tri1 = 6  # Lado 2 do triângulo 1
+angulo_tri1 = 60  # Ângulo entre os lados do triângulo 1 (em graus)
+
+lado1_tri2 = 7  # Lado 1 do triângulo 2
+lado2_tri2 = 8  # Lado 2 do triângulo 2
+angulo_tri2 = 45  # Ângulo entre os lados do triângulo 2 (em graus)
+
+area_quadrilatero = calcular_area_quadrilatero(lado1_tri1, lado2_tri1, angulo_tri1,
+                                               lado1_tri2, lado2_tri2, angulo_tri2)
+
+print(f"A área total do quadrilátero é: {area_quadrilatero:.2f} unidades quadradas")
+```  
+
