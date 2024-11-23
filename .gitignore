@@ -83,5 +83,5 @@ node_modules
 build
 .firebaserc
 firebase.json
-yarn.lock
-package-lock.json
+projeto/yarn.lock
+projeto/package-lock.json
