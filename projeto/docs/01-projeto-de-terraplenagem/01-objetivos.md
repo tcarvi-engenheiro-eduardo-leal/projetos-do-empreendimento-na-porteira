@@ -1,7 +1,8 @@
-# Objetivos do Projeto
+# Terraplenagem: Objetivos
 - Ter conhecimento da locação da obra de engenharia civil.
-    - Medidas dos limites
-    - Áreas internas, dentro dos limites da locação.
+    - Medidas dos limites.
+    - Ângulos das linhas dos limites.
+    - Áreas internas, conforme indicação no Cartório de Imóveis.
 - Ter conhecimento altimétrico dos pontos de referência do terreno.
 - Calcular quantidade e local do movimento de terra.
     - Planejar execução da terraplenagem.
