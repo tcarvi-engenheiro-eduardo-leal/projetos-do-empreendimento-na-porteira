@@ -14,8 +14,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Apresentação do Plano de Negócios. (em construção)<br></br>
-        Veja Site da Apresentação <a href="https://naporteira.com.br/em-breve" target="_blank">aqui</a>.
+        Esboço do Plano de Negócios. (em construção)<br></br>
+        Veja <a href="https://naporteira.com.br/em-breve" target="_blank">aqui</a>.
       </>
     ),
   },
@@ -24,16 +24,16 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Devido limitações financeiras, tudo será feito devagar. Mas executaremos todas as etapas do projeto com extrema perfeição técnica, com completa aderência às normas ABNT/NBR de engenharia Civil. <br></br><a href="https://naporteira.com.br/docs/category/projeto-de-terraplenagem" target="_self"></a>Etapa atual: identificação dos limites e topografia do terreno, para produção de documentos de unificação de lotes.
+        Devido limitações financeiras, construção será feita devagar. Mas executaremos todas as etapas do projeto com perfeição técnica e com completa aderência às normas ABNT/NBR de Engenharia Civil. <br></br><a href="https://naporteira.com.br/docs/category/projeto-de-terraplenagem" target="_self">Etapa atual: </a>Mapa de Locação.
       </>
     ),
   },
   {
-    title: 'Documentos de Projetos com Cálculos',
+    title: 'Documentos Produzidos',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Apresentação das etapas do projeto com os cálculos e análises relevantes. Cálculos serão mostrados em logs, a partir da execução de scripts python, a serem executos no Google-Colaboratory ou no próprio site do projeto.
+        1. Mapa de Locação
       </>
     ),
   },
