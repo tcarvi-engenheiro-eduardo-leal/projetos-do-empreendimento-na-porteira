@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Devido limitações financeiras, construção será feita devagar. Mas executaremos todas as etapas do projeto com perfeição técnica e com completa aderência às normas ABNT/NBR de Engenharia Civil. <br></br><a href="https://naporteira.com.br/docs/category/projeto-de-terraplenagem" target="_self">Etapa atual: </a>Mapa de Locação.
+        Devido limitações financeiras, construção será feita devagar.<br></br>Mas executaremos todas as etapas do projeto com perfeição técnica e com completa aderência às normas ABNT/NBR de Engenharia Civil.<br></br>Etapa atual: <a href="https://naporteira.com.br/docs/projeto-de-terraplenagem/etapa-atual" target="_self">Mapa de Locação</a>.
       </>
     ),
   },
