@@ -1,5 +1,5 @@
 # Levantamento Topográfico
 
-(página não terminada ainda)
+( mapa em andamento ...)
 
 ![](img/locacao-clube-na-porteira.png)
