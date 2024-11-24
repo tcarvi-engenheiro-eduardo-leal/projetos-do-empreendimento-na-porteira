@@ -4,7 +4,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -20,7 +19,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/projeto-de-terraplenagem/objetivos">
-            Leia, Execute, Veja e Valide - 30 min para cada ⏱️
+            Leia, Execute, Veja e Valide - 30 min para cada tópico ⏱️
           </Link>
         </div>
       </div>

@@ -6,7 +6,7 @@ import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
   title: 'Projetos de Eng. Civil do "Clube de Eventos Na Porteira"',
-  tagline: 'detalhamentos e cálculos de projetos',
+  tagline: 'detalhamentos e cálculos dos projetos',
   favicon: 'img/favicon.ico',
   url: 'https://naporteira.com.br/',
   baseUrl: '/',
