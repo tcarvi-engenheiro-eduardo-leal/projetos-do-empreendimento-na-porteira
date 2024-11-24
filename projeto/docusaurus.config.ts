@@ -1,44 +1,47 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
   title: 'Projetos de Eng. Civil do "Clube de Eventos Na Porteira"',
   tagline: 'detalhamentos e cálculos de projetos',
   favicon: 'img/favicon.ico',
-
   url: 'https://naporteira.com.br/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  organizationName: 'tcarvi-engenheiro-eduardo-leal', //GitHub org/user name.
-  projectName: 'projetos-do-empreendimento-na-porteira', //GitHub repo name.
-
+  organizationName: 'tcarvi-engenheiro-eduardo-leal',
+  projectName: 'projetos-do-empreendimento-na-porteira',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'pt-br',
     locales: ['pt-br'],
   },
-
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
   presets: [
     [
       'classic',
       {
         docs: {
+          path: 'docs',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/tcarvi-engenheiro-eduardo-leal/projeto-na-porteira',
-        },
+          'https://github.com/tcarvi-engenheiro-eduardo-leal/projeto-na-porteira/edit/main/projeto/',        },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/tcarvi-engenheiro-eduardo-leal/projeto-na-porteira',
+            'https://github.com/tcarvi-engenheiro-eduardo-leal/projeto-na-porteira/edit/main/projeto/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -46,14 +49,12 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'na-porteira',
       logo: {
-        alt: 'Logo TCARVI',
+        alt: 'na-porteira',
         src: 'img/logo.svg',
       },
       items: [
@@ -65,7 +66,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/projeto-na-porteira',
+          href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/projetos-do-empreendimento-na-porteira',
           label: 'GitHub',
           position: 'right',
         },
@@ -79,7 +80,7 @@ const config: Config = {
           items: [
             {
               label: 'Projetos',
-              to: '/docs/projeto-de-terraplenagem/objetivos',
+              to: '/docs/category/projeto-de-terraplenagem',
             },
           ],
         },
@@ -109,7 +110,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/projeto-na-porteira',
+              href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/projetos-do-empreendimento-na-porteira',
             },
           ],
         },
