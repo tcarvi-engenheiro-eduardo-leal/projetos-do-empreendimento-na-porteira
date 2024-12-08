@@ -66,6 +66,11 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          href: 'https://naporteira.com.br',
+          label: 'naporteira.com.br',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/projetos-do-empreendimento-na-porteira',
           label: 'GitHub',
           position: 'right',
