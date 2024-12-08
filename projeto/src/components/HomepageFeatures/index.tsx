@@ -14,8 +14,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Esboço do Plano de Negócios. (em construção)<br></br>
-        Veja <a href="https://naporteira.com.br/em-breve" target="_blank">aqui</a>.
+        Plano de Negócios. (em construção)<br></br>
+        Veja <a href="https://projetos-na-porteira.web.app/em-breve/" target="_blank">aqui</a>.
       </>
     ),
   },
