@@ -3,9 +3,11 @@
 ( cálculos sendo definidos ... )
 
 ```python
+# Script não concluído ainda.
+
 import math
 
-def calcular_area_triangulo(lado1, lado2, angulo):
+def calcular_area_triangulo(identificador_do_triangulo,lado1, lado2, angulo):
     """
     Conhecimentos Matemáticos:
         Fórmula da área de triângulo com dois lados e o ângulo entre eles.
@@ -15,11 +17,13 @@ def calcular_area_triangulo(lado1, lado2, angulo):
     :param angulo: Ângulo entre os dois lados em graus.
     :return: Área do triângulo.
     """
+    print(f"\tCalculando área de {identificador_do_triangulo}, considerando lado1 = {lado1:.2f} m, lado2 = {lado2:.2f} m e ângulo entre eles = {angulo:.2f} graus.")
     angulo_rad = math.radians(angulo)  # Converte o ângulo para radianos
     area = 0.5 * lado1 * lado2 * math.sin(angulo_rad)
+    print(f"\tÁrea de {identificador_do_triangulo} = {area:.2f}")
     return area
 
-def calcular_area_quadrilatero(identificador_do_quadrilatero, lado1_tri1, lado2_tri1, angulo_tri1, 
+def calcular_area_quadrilatero(identificador_do_quadrilatero, identificador_do_triangulo1, lado1_tri1, lado2_tri1, angulo_tri1, identificador_do_triangulo2,
                                lado1_tri2, lado2_tri2, angulo_tri2):
     """
     :param lado1_tri1: Primeiro lado do triângulo 1.
@@ -30,28 +34,62 @@ def calcular_area_quadrilatero(identificador_do_quadrilatero, lado1_tri1, lado2_
     :param angulo_tri2: Ângulo entre os lados do triângulo 2.
     :return: Área total do quadrilátero.
     """
+    print(f"* * * *\nCalculando área de {identificador_do_quadrilatero}, considerando {identificador_do_triangulo1} e {identificador_do_triangulo2}...")
+
     # Área do primeiro triângulo
-    area_tri1 = calcular_area_triangulo(lado1_tri1, lado2_tri1, angulo_tri1)
+    area_tri1 = calcular_area_triangulo(identificador_do_triangulo1, lado1_tri1, lado2_tri1, angulo_tri1)
     
     # Área do segundo triângulo
-    area_tri2 = calcular_area_triangulo(lado1_tri2, lado2_tri2, angulo_tri2)
+    area_tri2 = calcular_area_triangulo(identificador_do_triangulo2, lado1_tri2, lado2_tri2, angulo_tri2)
     
     # Soma das áreas dos dois triângulos
     area_total = area_tri1 + area_tri2
+    print(f"Área de {identificador_do_quadrilatero} = {area_total:.2f} metros quadrados.")
+
     return area_total
 
-# Exemplo de uso
-lado1_tri1 = 5  # Lado 1 do triângulo 1
-lado2_tri1 = 6  # Lado 2 do triângulo 1
-angulo_tri1 = 60  # Ângulo entre os lados do triângulo 1 (em graus)
 
-lado1_tri2 = 7  # Lado 1 do triângulo 2
-lado2_tri2 = 8  # Lado 2 do triângulo 2
-angulo_tri2 = 45  # Ângulo entre os lados do triângulo 2 (em graus)
-
-area_quadrilatero = calcular_area_quadrilatero(lado1_tri1, lado2_tri1, angulo_tri1,
+# Cálculo da área do Lote 08-D
+identificador_do_quadrilatero1 = 'lote_08_D'
+identificador_do_triangulo1 = 'triangulo_1_lote_08_D'
+lado1_tri1 = 20  # Lado 1 do triângulo 1
+lado2_tri1 = 25  # Lado 2 do triângulo 1
+angulo_tri1 = 90  # Ângulo entre os lados do triângulo 1 (em graus)
+identificador_do_triangulo2 = 'triangulo_2_lote_08_D'
+lado1_tri2 = 22.14  # Lado 1 do triângulo 2
+lado2_tri2 = 22.60  # Lado 2 do triângulo 2
+angulo_tri2 = 96.84  # Ângulo entre os lados do triângulo 2 (em graus)
+area_quadrilatero1 = calcular_area_quadrilatero(identificador_do_quadrilatero1, identificador_do_triangulo1, lado1_tri1, lado2_tri1, angulo_tri1, identificador_do_triangulo2,
                                                lado1_tri2, lado2_tri2, angulo_tri2)
 
-print(f"A área total do quadrilátero é: {area_quadrilatero:.2f} unidades quadradas")
+# Cálculo da área do Lote 08-C
+identificador_do_quadrilatero2 = 'lote_08_C'
+identificador_do_triangulo1 = 'triangulo_1_lote_08_C'
+lado1_tri1 = 10  # Lado 1 do triângulo 1
+lado2_tri1 = 22.60  # Lado 2 do triângulo 1
+angulo_tri1 = 89.54  # Ângulo entre os lados do triângulo 1 (em graus)
+identificador_do_triangulo2 = 'triangulo_2_lote_08_C'
+lado1_tri2 = 10.07  # Lado 1 do triângulo 2
+lado2_tri2 = 21.32  # Lado 2 do triângulo 2
+angulo_tri2 = 96.84  # Ângulo entre os lados do triângulo 2 (em graus)
+area_quadrilatero2 = calcular_area_quadrilatero(identificador_do_quadrilatero2, identificador_do_triangulo1, lado1_tri1, lado2_tri1, angulo_tri1, identificador_do_triangulo2,
+                                               lado1_tri2, lado2_tri2, angulo_tri2)
+
+# Cálculo da área do Lote 07/P
+identificador_do_quadrilatero3 = 'lote_07_P'
+identificador_do_triangulo1 = 'triangulo_1_lote_07_P'
+lado1_tri1 = 10  # Lado 1 do triângulo 1
+lado2_tri1 = 21.32  # Lado 2 do triângulo 1
+angulo_tri1 = 71.88  # Ângulo entre os lados do triângulo 1 (em graus)
+identificador_do_triangulo2 = 'triangulo_2_lote_07_P'
+lado1_tri2 = 17.00  # Lado 1 do triângulo 2
+lado2_tri2 = 10.26  # Lado 2 do triângulo 2
+angulo_tri2 = 94.55  # Ângulo entre os lados do triângulo 2 (em graus)
+area_quadrilatero3 = calcular_area_quadrilatero(identificador_do_quadrilatero3, identificador_do_triangulo1, lado1_tri1, lado2_tri1, angulo_tri1, identificador_do_triangulo2,
+                                               lado1_tri2, lado2_tri2, angulo_tri2)
+
+# Soma das Áreas Unificadas
+area_unificada = area_quadrilatero1 + area_quadrilatero2 + area_quadrilatero3
+print(f"Área total Unificada dos 3 lotes = {area_unificada:.2f} metros quadrados.")
 ```  
 
