@@ -2,4 +2,4 @@
 
 ( mapa em andamento ...)
 
-![](img/arquitetura-piscina.png)
+![](img/planta-terreo-com-parque-aquatico.png)
