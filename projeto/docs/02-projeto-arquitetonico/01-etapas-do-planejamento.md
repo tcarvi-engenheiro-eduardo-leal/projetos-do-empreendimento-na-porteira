@@ -19,7 +19,7 @@
         - Visão da área de estacionamento interno
         - Visão dos estacionamentos da área pública
         - Visão dos jardins da área pública
-        - Visão dos jardins da área de palmeiras imperiais
+        - Visão dos jardins da área de palmeiras
     - Andar 1: visão do mesanino
         - Visão das áreas de alimentação, jogos e banhos de sol.
         - Visão do acesso às portas dos quartos de pernoite e da varanda de 7 dos quartos de pernoite.
