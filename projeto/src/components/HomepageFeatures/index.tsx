@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Plano de Negócios. (em construção)<br></br>
-        Veja <a href="https://projetos-na-porteira.web.app/em-breve/" target="_blank">aqui</a>.
+        Veja <a href="https://projetos-na-porteira.web.app/plano-de-negocios/" target="_blank">aqui</a>.
       </>
     ),
   },
