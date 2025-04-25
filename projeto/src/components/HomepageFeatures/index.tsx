@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        1. Mapa de Locação (ainda sendo definido)<br></br>
+        1. <a href="https://projetos-na-porteira.web.app/docs/projeto-de-terraplenagem/mapa-de-locacao" target="_blank">Mapa de Locação</a> (ainda sendo definido)<br></br>
         2. <a href="https://projetos-na-porteira.web.app/docs/projeto-arquitetonico/identificacao-e-localizacao-dos-espacos" target="_blank">Mapa das Áreas do Clube</a> (ainda sendo definido)<br></br>
       </>
     ),
